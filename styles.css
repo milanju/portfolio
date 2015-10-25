@@ -1,0 +1,213 @@
+/* misc style */
+
+html {
+  font-size: 62.5%;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FFF;
+}
+
+a {
+  color: #e53935;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e53935;
+}
+
+.spacer {
+  height: 104px;
+}
+
+.spacer-page {
+  height: 76px;
+}
+
+.button {
+  color: #FFF;
+  border-color: #BBB;
+}
+
+.button:hover, .button:focus {
+  color: #e53935;
+  border-color: #DDD;
+}
+
+/* header */
+.header {
+  position: absolute;
+  z-index: 1000;
+  height: 104px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #303030;
+  color: #FFF;
+  transition: background-color 1s, height 0.5s;
+}
+
+.header-inverted {
+  height: 76px;
+  background-color: #FFF;
+  color: #303030;
+}
+
+.header-inverted .logo {
+  color: #303030;
+  font-size: 2.4em;
+}
+
+.header-inverted .logo-description {
+  color: #303030;
+  font-size: 2.2em;
+}
+
+.logo,
+.logo-description {
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+  transition: font-size 0.3s;
+}
+
+.logo {
+  margin-bottom: 0;
+}
+
+.logo-description {
+  line-height: 0.8;
+}
+
+/* home */
+.home {
+  width: 100%;
+}
+
+/* project list */
+
+.project-item {
+  overflow: hidden;
+  background-color: #F7F7F7;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  cursor: pointer;
+}
+
+.project-thumbnail {
+  width: 100%;
+}
+
+.status-production,
+.status-demo,
+.status-development {
+  font-weight: bold;
+}
+
+.status-production {
+  color: #00e676;
+}
+
+.status-demo {
+  color: #ff80ab;
+}
+
+.status-development {
+  color: #ff9100;
+}
+
+/* project view */
+
+.project-headline {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.project-view-status {
+  text-align: center;
+}
+
+.project-buttons {
+  text-align: center;
+}
+
+.project-image-desktop {
+  width: 100%;
+}
+
+.page {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  background-color: #303030;
+  color: #EEE;
+  overflow-y: auto;
+  transition: left 0.4s ease-in-out;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.show {
+  left: 0;
+}
+
+.project-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 40px;
+  font-weight: 300;
+  color: #ff1744;
+  cursor: pointer;
+}
+
+/* footer */
+
+.footer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.contact-container {
+  width: 300px;
+  height: 100px;
+  margin: 0 auto;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  background-color: #303030;
+  color: #FFF;
+  font-size: 1.2em;
+}
+
+.github-img {
+  margin-top: 10px;
+}
+
+.author {
+  margin-top: 20px;
+  margin-bottom: -10px;
+}
+
+.footer-link {
+  font-size: 80%;
+  font-weight: bold;
+}
+
+.github-img {
+  width: 50px;
+}
+
