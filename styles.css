@@ -21,11 +21,11 @@ a {
 }
 
 a:hover {
-  color: #e53935;
+  color: #e57373;
 }
 
 .spacer {
-  height: 104px;
+  height: 68px;
 }
 
 .spacer-page {
@@ -35,6 +35,7 @@ a:hover {
 .button {
   color: #FFF;
   border-color: #BBB;
+  margin-bottom: 2px;
 }
 
 .button:hover, .button:focus {
@@ -43,10 +44,11 @@ a:hover {
 }
 
 /* header */
+
 .header {
-  position: absolute;
+  position: fixed;
   z-index: 1000;
-  height: 104px;
+  height: 68px;
   width: 100%;
   overflow: hidden;
   background-color: #303030;
@@ -55,19 +57,21 @@ a:hover {
 }
 
 .header-inverted {
-  height: 76px;
+  height: 72px;
   background-color: #FFF;
   color: #303030;
 }
 
 .header-inverted .logo {
   color: #303030;
-  font-size: 2.4em;
+  font-size: 3.4rem;
+  line-height: 1.1;
 }
 
 .header-inverted .logo-description {
   color: #303030;
-  font-size: 2.2em;
+  font-size: 3rem;
+  line-height: 1.1;
 }
 
 .logo,
@@ -75,17 +79,56 @@ a:hover {
   color: #FFF;
   text-decoration: none;
   text-align: center;
+  font-weight: 300;
   transition: font-size 0.3s;
 }
 
 .logo {
   margin-bottom: 0;
+  font-size: 3.1rem;
+  line-height: 1.2;
 }
 
 .logo-description {
+  font-size: 2.7rem;
   line-height: 0.8;
 }
 
+@media (min-width: 400px) {
+  .logo {
+    font-size: 4.2rem;
+  }
+
+  .logo-description {
+    font-size: 3.6rem;
+  }
+
+  .header, .spacer {
+    height: 90px;
+  }
+
+  .header-inverted {
+    height: 72px;
+  }
+}
+
+@media (min-width: 550px) {
+  .logo {
+    font-size: 5rem;
+  }
+
+  .logo-description {
+    font-size: 4rem;
+  }
+
+  .header, .spacer {
+    height: 104px;
+  }
+
+  .header-inverted {
+    height: 72px;
+  }
+}
 /* home */
 .home {
   width: 100%;
@@ -127,9 +170,11 @@ a:hover {
 /* project view */
 
 .project-headline {
+  margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 10px;
   text-align: center;
+  display: inline-block;
 }
 
 .project-view-status {
@@ -142,6 +187,10 @@ a:hover {
 
 .project-image-desktop {
   width: 100%;
+}
+
+.tools {
+  font-weight: bold;
 }
 
 .page {
@@ -166,13 +215,22 @@ a:hover {
 }
 
 .project-close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 40px;
+  margin-top: 20px;
+  float: right;
+  font-size: 3.2rem;
   font-weight: 300;
+  line-height: 1.2;
   color: #ff1744;
   cursor: pointer;
+}
+
+@media (min-width: 550px) {
+  .project-close { font-size: 4rem;}
+}
+
+
+@media (min-width: 750px) {
+  .project-close { font-size: 5rem; }
 }
 
 /* footer */

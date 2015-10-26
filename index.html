@@ -18,15 +18,15 @@
     <header class="header">
       <div class="container">
         <a href="/" onclick="closePages(event);">
-          <h1 class="logo">MILAN JURHAN</h1>
-          <h2 class="logo-description">WEB DEVELOPER</h2>
+          <div class="logo">MILAN JURHAN</div>
+          <div class="logo-description">WEB DEVELOPER</div>
         </a>
       </div>
     </header>
     <div class="spacer"></div>
     <section class="projects-section">
       <div class="container">
-        <h3 class="projects-headline">My Work</h3>
+        <h1 class="projects-headline">My Work</h1>
         <div class="row">
           <div class="project-item four columns" onclick="showPage(event, 2);">
             <img class="project-thumbnail" src="img/sc2bo_desktop.png">
@@ -62,7 +62,7 @@
       <div class="spacer-page"></div>
       <div class="container">
         <h1 class="project-headline">SC2BO</h1>
-        <div class="project-close" onclick="closePages();">X</div>
+        <span class="project-close" onclick="closePages();">X</span>
         <a href="http://neuromodulation.ucla.edu/">
           <img class="project-image-desktop" src="img/sc2bo_desktop.png">
         </a>
@@ -71,7 +71,9 @@
           <a class="button" href="http://sc2bo.com/">View Live</a>
         </div>
         <p class="project-view-status">Status: <span class="status-production">Production</span></p>
-        <p class="project-view-tools">Tools: Meteor(platform), HTML, CSS, JavaScript, Materialize(css), Mongo(db), Blaze(front-end)</p>
+        <p class="project-view-tools"><span class="tools">Tools:</span> <a href="https://www.meteor.com/">Meteor</a>, HTML, CSS, JavaScript,
+          <a href="http://materializecss.com/">Materialize</a>,
+          MongoDB, <a href="https://atmospherejs.com/meteor/blaze">Blaze</a></p>
         <p class="project-description">
           SC2BO is a real-time community application built on top of Meteor.
           This app provides a central platform to share & view StarCraft II&copy; Build Orders.
@@ -82,8 +84,8 @@
     <div class="page page-1">
       <div class="spacer-page"></div>
       <div class="container">
-        <h1 class="project-headline">UCLA Neuromodulation</h1>
         <div class="project-close" onclick="closePages();">X</div>
+        <h1 class="project-headline">UCLA Neuromodulation</h1>
         <a href="http://neuromodulation.ucla.edu/">
           <img class="project-image-desktop" src="img/neuromodulation_desktop.png">
         </a>
@@ -92,7 +94,7 @@
           <a class="button" href="http://neuromodulation.ucla.edu/">View Live</a>
         </div>
         <p class="project-view-status">Status: <span class="status-production">Production</span></p>
-        <p class="project-view-tools">Tools: HTML, CSS, JavaScript, Materialize(css)</p>
+        <p class="project-view-tools"><span class="tools">Tools:</span> HTML, CSS, JavaScript, <a href="http://materializecss.com/">Materialize</a></p>
         <p class="project-description">
           This is a landing page created for the Neuromodulation Division of the University of California, Los Angeles.
           I designed this website using a Mobile First approach. This sites header features a rather complex layout of elements:
@@ -115,7 +117,7 @@
           <a class="button" href="http://milanju.github.io/barcodesexposed/">View Live</a>
         </div>
         <p class="project-view-status">Status: <span class="status-demo">Live Demo</span></p>
-        <p class="project-view-tools">Tools: HTML, CSS, JavaScript, Material Design Lite(css), Dropbox(backend), Battle.net game API(data)</p>
+        <p class="project-view-tools"><span class="tools">Tools:</span> HTML, CSS, JavaScript, <a href="http://www.getmdl.io/">Material Design Lite</a>, <a href="https://dev.battle.net/">Battle.net game API</a>, Dropbox(backend)</p>
         <p class="project-description">
           The StarCraft II&copy; grandmaster ladder is dominated by high caliber players
           hiding their identities, typically using a nick such as lIlIlIlIlIlI.
