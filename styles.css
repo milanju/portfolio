@@ -130,9 +130,15 @@ a:hover {
     height: 72px;
   }
 }
+
 /* home */
+
 .home {
   width: 100%;
+}
+
+.projects-headline {
+  margin-top: 16px;
 }
 
 /* project list */
