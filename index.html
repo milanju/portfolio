@@ -28,18 +28,31 @@
       <div class="container">
         <h1 class="projects-headline">My Work</h1>
         <div class="row">
-          <div class="project-item four columns" onclick="showPage(event, 2);">
+          <div class="project-item four columns" onclick="showPage(event, 5);">
             <img class="project-thumbnail" src="img/sc2bo_desktop.png">
             <span>SC2BO</span>
           </div>
-          <div class="project-item four columns" onclick="showPage(event, 1);">
+          <div class="project-item four columns" onclick="showPage(event, 4);">
+            <img class="project-thumbnail" src="img/neuromodulation_desktop.png">
+            <span>Tournament Platform</span>
+          </div>
+          <div class="project-item four columns" onclick="showPage(event, 3);">
             <img class="project-thumbnail" src="img/neuromodulation_desktop.png">
             <span>UCLA Neuromodulation</span>
           </div>
-
-          <div class="project-item four columns" onclick="showPage(event, 0);">
+        </div>
+        <div class="row">
+          <div class="project-item four columns" onclick="showPage(event, 2);">
             <img class="project-thumbnail" src="img/barcodesexposed_desktop.png">
             <span>Barcodes Exposed</span>
+          </div>
+          <div class="project-item four columns" onclick="showPage(event, 1);">
+            <img class="project-thumbnail" src="img/tictactoe_desktop.png">
+            <span>Tic Tac Toe</span>
+          </div>
+          <div class="project-item four columns" onclick="showPage(event, 0);">
+            <img class="project-thumbnail" src="img/barcodesexposed_desktop.png">
+            <span>This Website</span>
           </div>
         </div>
       </div>
@@ -58,7 +71,7 @@
       <a class="footer-link" href="http://getskeleton.com/">Built with Skeleton</a>
     </footer>
 
-    <div class="page page-2">
+    <div class="page page-5">
       <div class="spacer-page"></div>
       <div class="container">
         <span class="project-close" onclick="closePages();">X</span>
@@ -81,7 +94,7 @@
       </div>
     </div>
 
-    <div class="page page-1">
+    <div class="page page-3">
       <div class="spacer-page"></div>
       <div class="container">
         <div class="project-close" onclick="closePages();">X</div>
@@ -104,7 +117,7 @@
       </div>
     </div>
 
-    <div class="page page-0">
+    <div class="page page-2">
       <div class="spacer-page"></div>
       <div class="container">
         <div class="project-close" onclick="closePages();">X</div>
@@ -130,6 +143,31 @@
           <br>
           The backend consisting of only the API & a single JSON-File located within a Dropbox folder
           enables me to host the site on a comfortable GitHub Pages + Dropbox solution.
+        </p>
+      </div>
+    </div>
+
+    <div class="page page-1">
+      <div class="spacer-page"></div>
+      <div class="container">
+        <div class="project-close" onclick="closePages();">X</div>
+        <h1 class="project-headline">Tic Tac Toe</h1>
+        <a href="http://m-tictactoe.meteor.com/">
+          <img class="project-image-desktop" src="img/tictactoe_desktop.png">
+        </a>
+        <div class="project-buttons">
+          <a class="button" href="https://github.com/milanju/tictactoe">GitHub</a>
+          <a class="button" href="http://m-tictactoe.meteor.com/">View Live</a>
+        </div>
+        <p class="project-view-status">Status: <span class="status-demo">Live Demo</span></p>
+        <p class="project-view-tools"><span class="tools">Tools:</span> <a href="https://www.meteor.com/">Meteor</a>, HTML, CSS, JavaScript,
+          MongoDB, <a href="https://atmospherejs.com/meteor/blaze">Blaze</a></p></p>
+        <p class="project-description">
+          Highlight of this little application built on Meteor is the anonymous Match-Making system.
+          The first player to hit the 'Play!' button gets put in a queue. Once another player hits 'Play!'
+          a new board gets created for the two players to play on. Any amount of games may happen at once.
+          I use a heartbeat function to warrant that no disconnected player is sitting in the queue
+          and to clean up inactive boards.
         </p>
       </div>
     </div>
