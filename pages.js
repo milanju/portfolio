@@ -6,9 +6,7 @@ var showPage = function (event, page) {
 }
 
 var closePages = function (event) {
-  if (event) {
-    event.preventDefault();
-  }
+  if (event) event.preventDefault();
   $('body').css('overflow-y', 'auto');
   $('.header').removeClass('header-inverted');
   $('.page').removeClass('show');

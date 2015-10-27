@@ -189,6 +189,7 @@ a:hover {
 
 .project-image-desktop {
   width: 100%;
+  border-radius: 2px;
 }
 
 .tools {
@@ -260,11 +261,7 @@ a:hover {
 .author {
   margin-top: 20px;
   margin-bottom: -10px;
-}
-
-.footer-link {
-  font-size: 80%;
-  font-weight: bold;
+  font-size: 90%;
 }
 
 .github-img {

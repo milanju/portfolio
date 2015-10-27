@@ -29,12 +29,12 @@
         <h1 class="projects-headline">My Work</h1>
         <div class="row">
           <div class="project-item four columns" onclick="showPage(event, 5);">
-            <img class="project-thumbnail" src="img/sc2bo_desktop.png">
-            <span>SC2BO</span>
+            <img class="project-thumbnail" src="img/tournamentplatform_desktop.png">
+            <span>Tournament Platform</span>
           </div>
           <div class="project-item four columns" onclick="showPage(event, 4);">
-            <img class="project-thumbnail" src="img/neuromodulation_desktop.png">
-            <span>Tournament Platform</span>
+            <img class="project-thumbnail" src="img/sc2bo_desktop.png">
+            <span>SC2BO</span>
           </div>
           <div class="project-item four columns" onclick="showPage(event, 3);">
             <img class="project-thumbnail" src="img/neuromodulation_desktop.png">
@@ -68,15 +68,46 @@
       <p class="author">
         Created by Milan Jurhan
       </p>
-      <a class="footer-link" href="http://getskeleton.com/">Built with Skeleton</a>
     </footer>
 
     <div class="page page-5">
       <div class="spacer-page"></div>
       <div class="container">
         <span class="project-close" onclick="closePages();">X</span>
+        <h1 class="project-headline">Tournament Platform</h1>
+        <a href="http://tournament-platform.meteor.com/">
+          <img class="project-image-desktop" src="img/tournamentplatform_desktop.png">
+        </a>
+        <div class="project-buttons">
+          <a class="button" href="https://github.com/milanju/tournaments">GitHub</a>
+          <a class="button" href="http://tournament-platform.meteor.com/">View Live</a>
+        </div>
+        <p class="project-view-status">Status: <span class="status-development">Development</span></p>
+        <p class="project-view-tools"><span class="tools">Tools:</span> <a href="https://www.meteor.com/">Meteor</a>, HTML, CSS, JavaScript,
+          <a href="http://getbootstrap.com/">Bootstrap</a>,
+          MongoDB, <a href="https://atmospherejs.com/meteor/blaze">Blaze</a></p>
+        <p class="project-description">
+          This is a real-time tournament platform, specialized to serve StarCraft II tournaments.
+          You could think of this project as an alternative to a tournament platform such as
+          <a href="http://challonge.com/">Challonge</a> or <a href="http://binarybeast.com/">Binary Beast</a>, but specialized into serving
+          StarCraft II tournaments, therefore providing a much better user experience.
+          <br>
+          This website is still under development. The funcionality is fairly complete though.
+          The <a href="http://tournament-platform.meteor.com/">current demo</a> enables you to create and manage multiple tournaments, let users sign up and
+          once the tournament is started users may report scores of their assigned match.
+          Admins can manipulate the bracket in case of mistakes/false-reports.
+          <br>
+          Try the demo with following credentials: (USER: admin, PASSWORD: admin).
+        </p>
+      </div>
+    </div>
+
+    <div class="page page-4">
+      <div class="spacer-page"></div>
+      <div class="container">
+        <span class="project-close" onclick="closePages();">X</span>
         <h1 class="project-headline">SC2BO</h1>
-        <a href="http://neuromodulation.ucla.edu/">
+        <a href="http://sc2bo.com/">
           <img class="project-image-desktop" src="img/sc2bo_desktop.png">
         </a>
         <div class="project-buttons">
@@ -184,7 +215,7 @@
           <a class="button" href="https://github.com/milanju/portfolio">GitHub</a>
           <a class="button" href="/">View Live</a>
         </div>
-        <p class="project-view-status">Status: <span class="status-demo">Live Demo</span></p>
+        <p class="project-view-status">Status: <span class="status-production">Production</span></p>
         <p class="project-view-tools">
           <span class="tools">Tools:</span> HTML, CSS, JavaScript, <a href="http://getskeleton.com/">Skeleton</a>
         </p>
