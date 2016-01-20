@@ -1,13 +1,17 @@
 var showPage = function (event, page) {
   event.preventDefault();
-  $('body').css('overflow-y', 'hidden');
-  $('.page-' + page).addClass('show');
-  $('.header').addClass('header-inverted');
+  document.body.style['overflow-y'] = 'hidden';
+  document.getElementById('page-' + page).className += ' show';
+  document.getElementById('header').className += ' header-inverted';
 }
 
 var closePages = function (event) {
   if (event) event.preventDefault();
-  $('body').css('overflow-y', 'auto');
-  $('.header').removeClass('header-inverted');
-  $('.page').removeClass('show');
+  document.body.style['overflow-y'] = 'auto';
+  document.getElementById('header').className = 'header';
+  var pages = [].slice.call(document.getElementsByClassName('page'));
+  console.log(pages);
+  pages.map(function(page) {
+    page.className = 'page';
+  });
 }
