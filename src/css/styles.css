@@ -228,7 +228,7 @@ a:hover {
   background-color: #303030;
   color: #EEE;
   overflow-y: auto;
-  transition: left 0.4s ease-in-out;
+  transition: all 0.4s ease;
 }
 
 .yellow {
@@ -236,7 +236,7 @@ a:hover {
 }
 
 .show {
-  left: 0;
+  transform: translate3d(100%, 0, 0);
 }
 
 .project-close {
